@@ -78,8 +78,8 @@ if($_GET['do'] == 'list') {
 		echo file_get_contents($file);
 	}else{
 		header('Content-Type: text/html');
-		echo '<script src="//cdn.bootcss.com/highlight.js/8.8.0/highlight.min.js"></script>';
-		echo '<link href="//cdn.bootcss.com/highlight.js/8.8.0/styles/default.min.css" rel="stylesheet">';
+		echo '<script src="//cdn.staticfile.org/highlight.js/8.8.0/highlight.min.js"></script>';
+		echo '<link href="//cdn.staticfile.org/highlight.js/8.8.0/styles/default.min.css" rel="stylesheet">';
 		echo '<script>hljs.initHighlightingOnLoad();</script>';
 		echo '<pre><code>'.htmlspecialchars( correct_encoding( file_get_contents($file) ) ).'</code></pre>';	
 	}
